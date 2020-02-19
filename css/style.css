@@ -80,6 +80,10 @@ h6,
   line-height: 1.46;
 }
 
+.text-secondary{
+  color: #FE9B8E!important;
+}
+
 
 /* Sections */
 .section-xs {
@@ -308,4 +312,42 @@ h3+.group-50 {
 
 .tel + p {
   margin-top: 24px;
+}
+
+/* testimonials */
+.wrapp_review{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapp_review > * + *{
+  margin-left: 10px;
+}
+
+
+* + .wrapp_review{
+  margin-top: 36px;
+}
+
+.testimonials{
+  box-shadow: 0px 14px 20px rgba(11, 20, 85, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  padding:60px 60px 55px 70px;
+  text-align: left;
+}
+
+.testimonials_head{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+* + .testimonials_txt{
+  margin-top: 34px;
+}
+
+* + .testimonials_author{
+  margin-top: 44px;
 }
