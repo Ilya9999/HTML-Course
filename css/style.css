@@ -84,6 +84,10 @@ h6,
   color: #FE9B8E!important;
 }
 
+hr{
+  border:3px solid #0B1455;
+}
+
 
 /* Sections */
 .section-xs {
@@ -351,3 +355,41 @@ h3+.group-50 {
 * + .testimonials_author{
   margin-top: 44px;
 }
+
+/*spa-service*/
+
+* + .btn-primary , .btn-secondary{
+  margin-top: 50px;
+}
+
+/* choose_massage */
+.massage_service{
+  --webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.circle_icon{
+  justify-content: space-around;
+  -ms-align-items: center;
+  align-items: center;
+  fill:#FE9B8E; 
+  border-radius:50%;
+  width: 90px;
+  height: 90px;
+  background-color: #FFF1EF;
+}
+
+.massage_service .big{
+  margin-top: 15px;
+}
+
