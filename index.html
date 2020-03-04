@@ -15,7 +15,8 @@
 <body>
   <!-- Header -->
   <header>
-    <nav class="navbar navbar-expand-lg bg-white">
+    <nav class="navbar
+     navbar-expand-lg bg-white">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="images/logo.svg" alt="">
@@ -42,11 +43,41 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
-          <a href="#" class='btn btn-sm btn-secondary'>Get A Massage</a>
+          <a href="#" class='btn btn-sm header-btn' data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Get A Massage</a>
         </div>
       </div>
     </nav>
   </header>
+  <!-- popup -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Name:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-sm btn-primary">Send message</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
   <!-- Intro --> 
   <section class="section-intro">
@@ -339,6 +370,226 @@
     </div>
   </div>
   </section>
+
+  <section class="section-md price_plane">
+   <div class="container"> 
+        <div class="row row-30 text-center">
+ 
+            <div class="col-md-4">
+                 <div class=" massage_service"><h2>$99</h2>
+                   <h4>60min massage</h4>
+                   <p class="big">Lorem ipsum dolor sit amet sit consectetur adipiscing.</p>
+                   <a href="#" class="btn btn-primary">Book Now</a>  </div>
+            </div>
+
+            <div class="col-md-4">
+                 <div class=" massage_service"><h2>$199</h2>
+                   <h4>90min massage</h4>
+                   <p class="big">Lorem ipsum dolor sit amet sit consectetur adipiscing.</p>
+                   <a href="#" class="btn btn-secondary">Book Now</a>  </div>
+            </div>
+
+
+            <div class="col-md-4">
+                 <div class=" massage_service"><h2>$299</h2>
+                   <h4>120min massage</h4>
+                   <p class="big">Lorem ipsum dolor sit amet sit consectetur adipiscing.</p>
+                   <a href="#" class="btn btn-primary">Book Now</a>  </div>
+            </div>
+          
+        </div><!-- row-30 -->
+    </div>
+        
+  </section>
+
+  <section class="section-md info_section" >
+      <div class="container">
+          <div class="row row-30">
+              <div class="col-md-5"><h5>Frequently Asked <br>Question</h5></div>
+              <div class="col-md-7">
+                  <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                             Lorem ipsum dolor sit amet, consectetur adipiscing?
+                          </button>
+                        </h5>
+                      </div>
+
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                             Lorem ipsum dolor sit amet, consectetur adipiscing?
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing?
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div><!-- row-30 -->
+      </div>
+  </section>
+
+  <section class="section-md card_block">
+     <div class="container">
+        <h2> Beautyrel Massage Gift Voucher</h2>
+        <p class="big">Nulla id nibh at neque aliquet feugiat id sed nibh.</p>
+          <div class="row row-30">
+             <div class="col-md-4">
+                <div class="wrapp_card">
+                    <h5>Gift Voucher</h5>
+                    <h2 class="h2">Redeem Gift</h2>
+                    <p class="big">Lorem ipsum dolor sit amet sit consectetur adipiscing.</p>
+                     <a href="#" class='btn btn-lg btn-secondary'>Buy As Gift</a>     
+                </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="wrapp_card">
+                     <h5>Gift Voucher</h5>
+                     <h2 class="h2">Redeem Gift</h2>
+                     <p class="big">Lorem ipsum dolor sit amet sit consectetur adipiscing.</p>
+                      <a href="#" class='btn btn-lg btn-secondary'>Buy As Gift</a>     
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="wrapp_card">
+                     <h5>Gift Voucher</h5>
+                     <h2 class="h2">Redeem Gift</h2>
+                     <p class="big">Lorem ipsum dolor sit amet sit consectetur adipiscing.</p>
+                      <a href="#" class='btn btn-lg btn-secondary'>Buy As Gift</a>     
+                 </div>
+             </div>
+         </div>
+     </div>
+  </section>
+
+  <section class="justify-content-around d-flex  text-center flex-column team_section">
+     <div class="team_txt">
+          <h2>Are You a Qualified <br>Massage Therapist?</h2>
+         <p class="big">Nulla id nibh at neque aliquet feugiat id sed nibh.</p>
+         <a href="#" class='btn btn-secondary'>Buy As Gift</a>
+     </div>
+      <div>
+          <img src="images/team.jpg" alt="img">
+      </div>
+  </section>
+
+  <footer>
+
+    <div class="container">
+        <div class="conection d-flex align-items-center justify-content-between">
+            <a href="tel:1 000 -234 -78-90">1 000 -234 -78-90 <span class="h5">Call Me Back</span></a>
+            <div class="cotact_block">
+                <span> Any complaints or suggestions?</span>
+                <a href="#" class="btn btn-sm">Let Us Now</a>
+            </div>
+        </div>
+        <div class="row row-30">
+            <div class="col-md-3">
+                <h6>Treatments</h6>
+                <ul class="foot_links">
+                    <li><a href="#">Remedial</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Pregnancy</a></li>
+                    <li><a href="#">Couples</a></li>
+                    <li><a href="#">In-Room</a></li>
+                    <li><a href="#">Hotel</a></li>
+                    <li><a href="#">Group Bookings</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6>Help</h6>
+                <ul class="foot_links">
+                    <li><a href="#">Remedial</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Pregnancy</a></li>
+                    <li><a href="#">Couples</a></li>
+                    <li><a href="#">In-Room</a></li>
+                    <li><a href="#">Hotel</a></li>
+                    <li><a href="#">Group Bookings</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6>Beautyrel</h6>
+                <ul class="foot_links">
+                    <li><a href="#">Remedial</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Pregnancy</a></li>
+                    <li><a href="#">Couples</a></li>
+                    <li><a href="#">In-Room</a></li>
+                    <li><a href="#">Hotel</a></li>
+                    <li><a href="#">Group Bookings</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+               <div class="ballons_block">
+                    <img src="images/ballons.jpg" alt="image">
+                   <span>Sed ut lectus non velit cursus tincidunt e aliquet feugiat.</span>
+                   <p class="date">25 September, 2019</p>
+               </div>
+            </div>
+        </div>
+        <div class="wrapp_privicy">
+            <div class="copyright">
+                <p>2019 © beautyrel. All Rights Reserved. Privacy Polic</p>
+            </div>
+            <div class="social">
+                <ul class="social_icons">
+                    <li><a href="#">
+                        <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.00781 18.5078C6.00781 19.3359 5.71094 20.0469 5.11719 20.6406C4.53906 21.2188 3.83594 21.5078 3.00781 21.5078C2.17969 21.5078 1.46875 21.2188 0.875 20.6406C0.296875 20.0469 0.0078125 19.3359 0.0078125 18.5078C0.0078125 17.6797 0.296875 16.9766 0.875 16.3984C1.46875 15.8047 2.17969 15.5078 3.00781 15.5078C3.83594 15.5078 4.53906 15.8047 5.11719 16.3984C5.71094 16.9766 6.00781 17.6797 6.00781 18.5078ZM21.0078 21.5078H17C17 19.1641 16.5547 16.9609 15.6641 14.8984C14.7734 12.8359 13.5547 11.0391 12.0078 9.50781C10.4766 7.96094 8.67969 6.74219 6.61719 5.85156C4.55469 4.94531 2.35156 4.49219 0.0078125 4.49219V0.507812C2.89844 0.507812 5.61719 1.0625 8.16406 2.17188C10.7109 3.26562 12.9375 4.76562 14.8438 6.67188C16.75 8.5625 18.25 10.7812 19.3438 13.3281C20.4531 15.875 21.0078 18.6016 21.0078 21.5078ZM14 21.5078H9.99219C9.99219 20.1172 9.72656 18.8203 9.19531 17.6172C8.67969 16.3984 7.96875 15.3359 7.0625 14.4297C6.15625 13.5234 5.09375 12.8125 3.875 12.2969C2.67188 11.7656 1.38281 11.5 0.0078125 11.5V7.49219C1.92969 7.49219 3.74219 7.85938 5.44531 8.59375C7.14844 9.32812 8.63281 10.3359 9.89844 11.6172C11.1641 12.8828 12.1641 14.3672 12.8984 16.0703C13.6328 17.7578 14 19.5703 14 21.5078Z"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="24" height="21" viewBox="0 0 24 21" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 3.04688C23.5625 3.25 23.1016 3.42188 22.6172 3.5625C22.1484 3.6875 21.6641 3.78125 21.1641 3.84375C21.6797 3.53125 22.125 3.14062 22.5 2.67188C22.875 2.20312 23.1562 1.67969 23.3438 1.10156C22.8594 1.38281 22.3516 1.625 21.8203 1.82812C21.3047 2.03125 20.7656 2.1875 20.2031 2.29688C19.7656 1.82812 19.2344 1.45312 18.6094 1.17188C17.9844 0.890625 17.3203 0.75 16.6172 0.75C15.9297 0.75 15.2891 0.882812 14.6953 1.14844C14.1016 1.39844 13.5781 1.75 13.125 2.20312C12.6875 2.64062 12.3359 3.15625 12.0703 3.75C11.8203 4.34375 11.6953 4.98437 11.6953 5.67188C11.6953 5.85938 11.7031 6.04688 11.7188 6.23438C11.75 6.42188 11.7812 6.60938 11.8125 6.79688C10.7969 6.75 9.80469 6.59375 8.83594 6.32812C7.88281 6.0625 6.97656 5.71094 6.11719 5.27344C5.25781 4.82031 4.45312 4.28906 3.70312 3.67969C2.95312 3.07031 2.27344 2.39062 1.66406 1.64062C1.46094 2.01562 1.29688 2.41406 1.17188 2.83594C1.0625 3.24219 1.00781 3.67187 1.00781 4.125C1.00781 4.98437 1.20312 5.77344 1.59375 6.49219C2 7.21094 2.53125 7.78906 3.1875 8.22656C2.78125 8.21094 2.39062 8.14844 2.01562 8.03906C1.64062 7.92969 1.28906 7.78906 0.960938 7.61719C0.960938 7.61719 0.960938 7.625 0.960938 7.64062C0.960938 7.65625 0.960938 7.66406 0.960938 7.66406C0.960938 8.86719 1.33594 9.92188 2.08594 10.8281C2.85156 11.7188 3.79688 12.2734 4.92188 12.4922C4.70312 12.5547 4.48438 12.6016 4.26562 12.6328C4.0625 12.6641 3.84375 12.6797 3.60938 12.6797C3.45312 12.6797 3.29688 12.6719 3.14062 12.6562C2.98438 12.6406 2.83594 12.6172 2.69531 12.5859C3.00781 13.5547 3.57812 14.3594 4.40625 15C5.25 15.6406 6.21094 15.9766 7.28906 16.0078C6.44531 16.6641 5.5 17.1797 4.45312 17.5547C3.42188 17.9297 2.32812 18.1172 1.17188 18.1172C0.96875 18.1172 0.765625 18.1094 0.5625 18.0938C0.375 18.0781 0.1875 18.0625 0 18.0469C0.546875 18.3906 1.11719 18.7031 1.71094 18.9844C2.30469 19.25 2.91406 19.4766 3.53906 19.6641C4.17969 19.8516 4.83594 20 5.50781 20.1094C6.17969 20.2031 6.85938 20.25 7.54688 20.25C9.8125 20.25 11.8125 19.8281 13.5469 18.9844C15.2969 18.125 16.7656 17.0234 17.9531 15.6797C19.1406 14.3359 20.0391 12.8359 20.6484 11.1797C21.2578 9.50781 21.5625 7.85938 21.5625 6.23438C21.5625 6.14062 21.5547 6.03906 21.5391 5.92969C21.5391 5.82031 21.5391 5.71094 21.5391 5.60156C22.0234 5.25781 22.4688 4.875 22.875 4.45312C23.2969 4.01563 23.6719 3.54688 24 3.04688Z"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="12" height="23" viewBox="0 0 12 23" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.35156 22.75V13H0V8.5H3.35156V5.35938C3.35156 4.5 3.47656 3.75 3.72656 3.10938C3.99219 2.46875 4.35156 1.9375 4.80469 1.51562C5.27344 1.09375 5.82812 0.78125 6.46875 0.578125C7.10938 0.359375 7.8125 0.25 8.57812 0.25C9.29688 0.25 9.94531 0.273438 10.5234 0.320312C11.1016 0.351563 11.4766 0.382812 11.6484 0.414062V3.97656H9.53906C8.71094 3.97656 8.16406 4.15625 7.89844 4.51562C7.63281 4.875 7.5 5.34375 7.5 5.92188V8.5H12L10.5 13H7.5V22.75H3.35156Z"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.9922 0.5H1.00781C0.726562 0.5 0.484375 0.601563 0.28125 0.804688C0.09375 0.992188 0 1.22656 0 1.50781V23.4922C0 23.7734 0.09375 24.0078 0.28125 24.1953C0.484375 24.3984 0.726562 24.5 1.00781 24.5H22.9922C23.2734 24.5 23.5078 24.3984 23.6953 24.1953C23.8984 24.0078 24 23.7734 24 23.4922V1.50781C24 1.22656 23.8984 0.992188 23.6953 0.804688C23.5078 0.601563 23.2734 0.5 22.9922 0.5ZM7.125 20.9609H3.5625V9.5H7.125V20.9609ZM5.34375 7.92969C4.76562 7.92969 4.27344 7.73437 3.86719 7.34375C3.47656 6.9375 3.28125 6.44531 3.28125 5.86719C3.28125 5.30469 3.47656 4.82031 3.86719 4.41406C4.27344 4.00781 4.76562 3.80469 5.34375 3.80469C5.90625 3.80469 6.39062 4.00781 6.79688 4.41406C7.20312 4.82031 7.40625 5.30469 7.40625 5.86719C7.40625 6.44531 7.20312 6.9375 6.79688 7.34375C6.39062 7.73437 5.90625 7.92969 5.34375 7.92969ZM20.4609 20.9609H16.8984V15.3828C16.8984 14.7109 16.8125 14.0391 16.6406 13.3672C16.4844 12.6797 15.9531 12.3359 15.0469 12.3359C14.125 12.3359 13.5391 12.6406 13.2891 13.25C13.0391 13.8594 12.9141 14.5391 12.9141 15.2891V20.9609H9.35156V9.5H12.7734V11.0703H12.8203C13.0547 10.6172 13.4531 10.1953 14.0156 9.80469C14.5938 9.41406 15.3125 9.21875 16.1719 9.21875C17.9844 9.21875 19.1484 9.74219 19.6641 10.7891C20.1953 11.8359 20.4609 13.1328 20.4609 14.6797V20.9609Z"/>
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+      
+  </footer>
+
+
 
  
   <script src="js/core.min.js"></script>
