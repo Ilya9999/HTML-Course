@@ -97,6 +97,11 @@ textarea{
     resize:none;
 }
 
+/*popup style*/
+.col-form-label{
+  padding-left: calc(0.375rem + 1px);
+}
+
 /* Sections */
 .section-xs {
   padding: 30px 0; 
@@ -589,4 +594,11 @@ footer h6{
 
 .social_icons li:not(:last-child){
     margin-right: 30px;
+}
+
+/*carousel-styles*/
+.next_arrow{
+  font-size: 40px;
+  color:#000;
+  font-weight: bold;
 }
